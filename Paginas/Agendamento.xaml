@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LavaRapidoMobile.Paginas.Agendamento"
+             Title="Agendamento">
+    <VerticalStackLayout Margin="10" HorizontalOptions="Center" Padding="10">
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label Text="ID" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="TXTID" FontSize="Large"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label Text="Proprietario" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="TXTProprietario" FontSize="Large"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label Text="Telefone" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="TXTTelefone" FontSize="Large"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label Text="Tipo de Veiculo" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="TXTTipoVeiculo" FontSize="Large"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label Text="Modelo do Veiculo" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="TXTModeloVeiculo" FontSize="Large"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label Text="Placa" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="TXTPlacaVeiculo" FontSize="Large"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label Text="Tipo de Serviço" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="TXTTipoServico" FontSize="Large"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label Text="Funcionario" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="TXTFuncionario" FontSize="Large"/>
+        </HorizontalStackLayout>
+
+        <Button x:Name="BTNSalvar" Text="Salvar" />
+
+        <Button x:Name="BTNCancelar" Text="Cancelar" BackgroundColor="Red"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>
