@@ -97,7 +97,7 @@
         <StackLayout Padding="20">
             <Label Text="Digite o email do destinatário:" />
             <Entry x:Name="TxtCampoEmail" Placeholder="exemplo@email.com" Keyboard="Email" />
-            <Button Text="Exportar e Enviar por Email" Clicked="BTNEnviarPorEmail_Clicked" />
+            <Button Text="Exportar e Enviar por Email(PDF)" Clicked="BTNEnviarPorEmail_Clicked" />
         </StackLayout>
     </ContentPage>
 
