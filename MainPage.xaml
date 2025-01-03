@@ -11,10 +11,8 @@
             <VerticalStackLayout>
                 <Label Text="Proprietario:"/>
                 <Entry x:Name="txtProprietario" />
-
                 <Label Text="Telefone Para Contato:"/>
                 <Entry x:Name="txtTelefone" Keyboard="Telephone" />
-
                 <Label Text="Selecione o tipo de veiculo:"/>
                 <Picker x:Name="cbxVeiculo"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              >
                     <Picker.ItemsSource>
@@ -24,33 +22,26 @@
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
-
                 <Label Text="Digite o modelo do veiculo"/>
                 <Entry x:Name="txtModelo"/>
-
                 <Label Text="Digite a placa do veiculo"/>
                 <Entry x:Name="txtPlaca"/>
-
                 <Label Text="Selecione o tipo de serviço"/>
                 <Picker x:Name="cbxServico">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
+                            <x:String>Enceramento</x:String>
+                            <x:String>Higienização</x:String>
                             <x:String>Lavagem Simples</x:String>
                             <x:String>Lavagem Completa</x:String>
-                            <x:String>Higienização</x:String>
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
-
                 <Label Text="Digite o nome do funcionario:"/>
                 <Entry x:Name="txtFuncionario"/>
-
             </VerticalStackLayout>
-
-
             <Button x:Name="BTNSalvar" Clicked="BTNSalvar_Clicked" Text="Salvar" BackgroundColor="Green" TextColor="White" />
             <Button Text="Limpar" x:Name="BTNLimparCampos" Clicked="BTNLimparCampos_Clicked" BackgroundColor="Red" TextColor="White" />
-
         </StackLayout>
     </ContentPage>
 
@@ -80,12 +71,8 @@
                                         <Label Text="{Binding Funcionario}"/>
                                         <Label Text="{Binding Data}"/>
                                     </VerticalStackLayout>
-
-
                                 </Border>
-
                             </SwipeView>
-
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
@@ -95,10 +82,9 @@
 
     <ContentPage Title="Envio de Tabela">
         <StackLayout Padding="20">
-            <Label Text="Digite o email do destinatário:" />
+            <Label Text="Insira um email:" />
             <Entry x:Name="TxtCampoEmail" Placeholder="exemplo@email.com" Keyboard="Email" />
-            <Button Text="Exportar e Enviar por Email" Clicked="BTNEnviarPorEmail_Clicked" />
+            <Button Text="Exportar Tabela" Clicked="BTNEnviarPorEmail_Clicked" />
         </StackLayout>
     </ContentPage>
-
 </TabbedPage>
