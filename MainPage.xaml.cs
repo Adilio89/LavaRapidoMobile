@@ -218,7 +218,5 @@ namespace LavaRapidoMobile
                 await DisplayAlert("Erro", $"Erro ao enviar email: {ex.Message}", "OK");
             }
         }
-
-
     }
 }
